@@ -13,6 +13,9 @@ import { UserState } from '../app/models/user/user.state';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavBarComponent } from './compoment/nav-bar/nav-bar/nav-bar.component';
 import {SideBarComponent} from './compoment/side-bar/side-bar/side-bar.component';
+import {HomeComponent} from './compoment/home/home.component';
+import {QuestionsComponent} from './compoment/questions/questions.component';
+import {QuestionComponent} from './compoment/question/question.component';
 
 import {MaterialModule} from './marterial.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -21,7 +24,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppComponent,
     TestNgxsComponent,
     NavBarComponent,
-    SideBarComponent
+    SideBarComponent,
+    HomeComponent,
+    QuestionsComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule,

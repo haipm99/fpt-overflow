@@ -1,0 +1,22 @@
+
+
+.top-header{
+    background-color: white;
+    width: 96%;
+    height: 10vh;
+    padding: 20px;
+    margin: 0;
+}
+
+.ask-question-button{
+    float: right !important;
+}
+
+.body-content{
+    background-color: white;
+    width: 96%;
+    height: 70vh;
+    padding: 20px;
+    margin: 0;
+    margin-top: 10px;
+}

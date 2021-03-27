@@ -1,14 +1,14 @@
-<mat-drawer-container class="example-container">
+<mat-drawer-container style="background-color: rgb(239,239,239);" class="example-container">
   <mat-drawer class="mat-drawer" mode="side" opened>
-
       <mat-list>
-        <mat-list-item class="list-item seleted-item">  <a mat-button href="https://www.google.com/">Home</a> </mat-list-item>
-        <mat-list-item class="list-item">  <a mat-button href="https://www.google.com/">Question</a> </mat-list-item>
-        <mat-list-item class="list-item">  <a mat-button href="https://www.google.com/">About</a> </mat-list-item>
+        <mat-list-item class="list-item" [class.seleted-item] = "homeSelected">  <a mat-button (click) = "changeUrl('home')" routerLink="home" routerLinkActive = "true">Home</a> </mat-list-item>
+        <mat-list-item class="list-item" [class.seleted-item] = "questionSelected">  <a mat-button (click) = "changeUrl('question')" routerLink="questions" routerLinkActive = "true">Question</a> </mat-list-item>
+        <mat-list-item class="list-item">  <a mat-button routerLink="https://www.google.com/" routerLinkActive = "true">About</a> </mat-list-item>
       </mat-list>
   </mat-drawer>
-
-  <mat-drawer-content class="mat-drawer-contain">
-    Main content
+  <div style="width: 10%;">
+  </div>
+  <mat-drawer-content class="mat-drawer-container">
+    <router-outlet></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>
